@@ -90,14 +90,14 @@ create table tb_titulo_artista(
 );
 
 INSERT INTO tb_artista (nome_art)
-VALUES ('John Carlos'),
-       ('Luke Smith'),
-       ('Michael Johnson');
+VALUES ('John Carlos Junior'),
+       ('Lucas Smith'),
+       ('Michael Johnson Jr.');
 
 INSERT INTO tb_gravadora (nome_grav)
-VALUES ('Universal Music'),
-       ('Sony Music'),
-       ('Warner Music');
+VALUES ('Universal Music Group'),
+       ('Sony Music Entertainment'),
+       ('Warner Music Group');
 
 INSERT INTO tb_categoria (nome_cat)
 VALUES ('Rock'),
@@ -115,22 +115,22 @@ VALUES ('SP', 'São Paulo'),
        ('MG', 'Belo Horizonte');
 
 INSERT INTO tb_cliente (cod_cid, nome_cli, end_cli, renda_cli, sexo)
-VALUES (1, 'João Silva', 'Rua A, 123', 3000.00, 'm'),
-       (2, 'Maria Santos', 'Av. B, 456', 2500.00, 'f'),
-       (3, 'Pedro Souza', 'Rua C, 789', 4000.00, 'm');
+VALUES (1, 'João Silva', 'Rua A, 123', 3000.00, 'M'),
+       (2, 'Maria Santos', 'Av. B, 456', 2500.00, 'F'),
+       (3, 'Pedro Souza', 'Rua C, 789', 4000.00, 'M');
 
 INSERT INTO tb_conjuge (cod_cli, nome_conj, renda_conj, sexo_conj)
-VALUES (1, 'Ana Silva', 2000.00, 'f'),
-       (3, 'Carla Souza', 3500.00, 'f');
+VALUES (1, 'Ana Silva', 2000.00, 'F'),
+       (3, 'Carla Souza', 3500.00, 'F');
 
 INSERT INTO tb_funcionario (nome_func, end_func, sal_func, sexo_func)
-VALUES ('Fernanda Oliveira', 'Rua X, 987', 5000.00, 'f'),
-       ('Marcos Santos', 'Av. Y, 654', 4500.00, 'm');
+VALUES ('Fernanda Oliveira', 'Rua X, 987', 5000.00, 'F'),
+       ('Marcos Santos', 'Av. Y, 654', 4500.00, 'M');
 
 INSERT INTO tb_dependente (cod_func, nome_dep, sexo_dep)
-VALUES (1, 'Luiza Oliveira', 'f'),
-       (1, 'Pedro Oliveira', 'm'),
-       (2, 'Sophia Santos', 'f');
+VALUES (1, 'Luiza Oliveira', 'F'),
+       (1, 'Pedro Oliveira', 'M'),
+       (2, 'Sophia Santos', 'F');
 
 INSERT INTO tb_titulo (cod_cat, cod_grav, nome_cd, val_cd, qtd_estq)
 VALUES (1, 1, 'Álbum 1', 29.99, 50),
@@ -152,6 +152,7 @@ VALUES (1, 1),
        (1, 2),
        (2, 3),
        (3, 1);
+
 -------------------------------------------------------------       
 SELECT c.nome_cat, t.nome_cd
 FROM tb_categoria c
